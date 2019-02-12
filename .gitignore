@@ -5,3 +5,4 @@ deprecated/
 TODO
 geckodriver.log
 .vscode/
+database_credentials.txt
