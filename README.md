@@ -26,6 +26,25 @@ The required Firefox webdriver for Selenium can be acquired [here](https://www.s
 ## Setting up the MySQL database
 Using the following bash command, a MySQL database with the name 'metallum' will
 be created, with a table called 'albums'
+
+Make sure that MySQL is already installed on your machine
 ```console
 user@user:~$ mysql -u <user> -p < dump.sql 
 ```
+
+## Setting up database information
+In order to make the script run correctly, a file called 'database_credentials.txt'
+must be created, which should adhere to the following structure:
+```
+<hostname> <user> <password> <database>
+```
+Where the credentials are to be filled in (hostname will most likely be localhost
+and the database name is metallum by default)
+
+## Usage
+The script can be used as follows:
+```console
+user@user:~$ python scrape_metallum.py <Country1> <Country2> ...
+```
+Where Country1, Country2, ... denote the countries you want the albums to be
+scraped for
