@@ -4,3 +4,4 @@ countries/
 deprecated/
 TODO
 geckodriver.log
+.vscode/
